@@ -29,6 +29,7 @@
 }
 .content span {
     color: #ff375f;
+    font-weight: bolder;
 }
 .content p {
     font-size: 15px;
@@ -98,5 +99,8 @@
 @media(max-width: 412px) {
     .content p {
         font-size: 20px;
-    }  
+    } 
+    .timer div p {
+        font-size: 50px;
+    } 
 }
