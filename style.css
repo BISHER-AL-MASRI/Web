@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+}
+.logo {
+    width: 120px;
+    padding: 20px 0;
+    width: 250px;
+}
+.content {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.content h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+.content span {
+    color: #ff375f;
+}
+.content p {
+    font-size: 15px;
+}
+.timer {
+    display: flex;
+}
+.timer div {
+    flex-basis: 100px;
+}
+.timer div p {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+.rocket {
+    width: 250px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+@keyframes rocket {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+    100% {
+        bottom: 105%;
+        opacity: 1;
+    }
+}
+@media(max-width: 280px) {
+    .content h1 {
+        font-size: 48px;
+    }
+    .content p {
+        font-size: 12px;
+    }
+    .timer div p {
+        margin-bottom: 10px;
+        font-size: 40px;
+    }
+    .rocket {
+        width: 200px;
+    }
+}
+@media(max-width: 320px) {
+    .content h1 {
+        font-size: 48px;
+    }
+    .content p {
+        font-size: 12px;
+    }
+    .timer div p {
+        margin-bottom: 10px;
+        font-size: 40px;
+    }
+    .rocket {
+        width: 200px;
+    }
+}
+    
+@media(max-width: 412px) {
+    .content p {
+        font-size: 20px;
+    }  
+}
